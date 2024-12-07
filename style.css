@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Base';
+    src: url(BaseNeueTrial-CondExtBdObliq.ttf);
+}
+
+@font-face {
+    font-family: 'BaseLight';
+    src: url(BaseNeueTrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BaseBold';
+    src: url(BaseNeueTrial-ExpBoldObliq.ttf);
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.intro {
+    position: fixed;
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Base';
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255, 0.9);
+    z-index: 1;
+}
+
+.peach {
+    font-size: 30px;
+    font-family: 'Base';
+    font-weight: 100;
+    text-decoration: none;
+    color: #161616;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-family: 'Base';
+    text-decoration: none;
+    margin-left: 30px;
+    color: #161616;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #161616;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.welcome {
+    height: 100vh;
+}
+
+.welcome h1 {
+    font-family: 'Base';
+    font-size: 280px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome img {
+    width: 200px;
+    position: absolute;
+    top: 92%;
+    left: 95%;
+    transform: translate(-70%, -70%);
+}
+
+
+
+.work {
+    padding: 20px;
+    height: auto;
+}
+
+
+.work h1,
+.about_me h1,
+.services h1,
+.shop h1,
+.contact h1 {
+    font-family: 'Base';
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+}
+
+hr {
+    color: #161616;
+    width: 95%;
+    height: 1px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.work .row {
+    display: flex;
+    align-items: center;
+}
+
+.col-md-4 {
+    padding: 15px;
+}
+
+.col-md-4 h4,
+.col-md-4 p {
+    z-index: -10;
+}
+
+.more {
+    font-size: 18px;
+    font-family: 'Base';
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 7px 10px;
+    position: relative;
+    left: 92.5%;
+}
+
+.more:hover {
+    background-color: #161616;
+    color: rgb(249, 244, 235);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.about_me {
+    height: 100vh;
+}
+
+.photo {
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    left: 7%;
+}
+
+.about_me p {
+    width: 800px;
+    height: 900px;
+    margin: 50px;
+    position: relative;
+    left: 8%;
+    font-family: 'Poppins';
+    font-size: 23px;
+    text-align: justify;
+}
+
+.about {
+    display: flex;
+}
+
+.resume {
+    font-family: 'Base';
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 40px;
+    background-color: #161616;
+    color: white;
+    border: solid #161616;
+}
+
+.resume:hover {
+    border: solid #161616;
+    color: #161616;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.services h5 {
+    font-family: 'Base';
+    font-size: 60px;
+}
+
+.col-sm-6 {
+    padding: 20px;
+}
+
+.contact {
+    height: auto;
+    padding-bottom: 0;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Poppins'
+}
+
+.contact span {
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.card-body p {
+    font-family: 'Poppins';
+}
+
+

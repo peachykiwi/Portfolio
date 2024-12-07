@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Base';
+    src: url(BaseNeueTrial-CondExtBdObliq.ttf);
+}
+
+@font-face {
+    font-family: 'BaseLight';
+    src: url(BaseNeueTrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BaseMedium';
+    src: url(BaseNeueTrial-Medium.ttf);
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    z-index: 1;
+}
+
+.peach {
+    font-size: 30px;
+    font-family: 'Base';
+    font-weight: 100;
+    text-decoration: none;
+    color: #161616;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-family: 'Base';
+    text-decoration: none;
+    margin-left: 30px;
+    color: #161616;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #161616;
+    color: rgb(249, 244, 235);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.work {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.work h1 {
+    font-family: 'Base';
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+}
+
+.tab-content {
+    margin-left: 40px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.nav-pills .nav-item .nav-link {
+    background-color: white;
+    color: #161616;
+    font-family: 'BaseMedium';
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #161616;
+    border-radius: 20px;
+}
+
+span {
+    font-family: 'Base';
+}
+
+.card-body p {
+    font-family: 'Poppins';
+}
+
+.tab-content {
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #161616;
+}
+
+.link span:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.modal-dialog {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.modal-header {
+    height: 20px;
+}
+
+.modal-fullscreen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body img {
+    width: 90vw;
+    height: auto;
+    object-fit: cover;
+    padding:0;
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+.modal-body p {
+    font-family:'Poppins';
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
