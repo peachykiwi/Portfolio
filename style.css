@@ -15,11 +15,6 @@
     src: url(BaseNeueTrial-Regular.ttf);
 }
 
-@font-face {
-    font-family: 'BaseBold';
-    src: url(BaseNeueTrial-ExpBoldObliq.ttf);
-}
-
 body {
     min-height: 100vh;
     overflow-x: hidden;
